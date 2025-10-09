@@ -1,4 +1,4 @@
-#!.venv/bin/python3
+#! python
 import argparse
 import json
 import time
@@ -10,7 +10,7 @@ from util.file import readfile
 
 
 def get_input_file(year: int, day: int):
-    with open('/Users/chris/.httpie/sessions/adventofcode.com/aoc.json', 'r') as f:
+    with open('/Users/chris/.config/httpie/sessions/adventofcode.com/aoc.json', 'r') as f:
         session_data = json.load(f)
 
     cookie = session_data['cookies'][0]['value']
